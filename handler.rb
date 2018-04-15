@@ -30,7 +30,7 @@ class Handler
 
   def parameters(params)
     params.each do |format|
-      @correct_format += TIME_FORMATS[format] if TIME_FORMATS[format]
+      return @correct_format += TIME_FORMATS[format] if TIME_FORMATS[format]
       @incorrect_formats << format
     end
   end
